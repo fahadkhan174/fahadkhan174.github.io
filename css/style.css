@@ -1,0 +1,63 @@
+@font-face {
+    font-family: PO;
+    src: url(fonts/PoiretOne-Regular.ttf);
+}
+
+body {
+	min-width: 240px;
+}
+
+.logo {
+	top: 2.5%;
+	font-family: 'Kristi', cursive;
+	font-size: 55px;
+    display: inline-block;
+    left: 50%;
+    width: 50px;
+    height: auto;
+    padding: 20px;
+    position: absolute;
+    white-space: nowrap;
+    text-decoration: none;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+	
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.landing-container {
+	margin-top: 15%;
+	text-align: center;
+}
+
+h1.words {
+	font-size: 70px;
+	text-align: center;
+}
+
+.center-button {
+	margin-top: 15%;
+	text-align: center;
+}
+
+.btn-lg {
+	border-radius: 50px;
+}
+
+.learn-more {
+	margin-top: 5%;
+    text-align: center;
+}
+
+.intro, .statement {
+	margin-top: 25px;
+	text-align: center;
+}
+
+
+
+
+

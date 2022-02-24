@@ -4,7 +4,7 @@ import { ThemeProvider } from '@mui/material/styles'
 
 import './App.css'
 import { ColorModeContext } from './theme/colorContext'
-import { theme as customTheme } from './theme'
+import theme from './theme/theme'
 import Home from './components/Home'
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
 
     return (
         <ColorModeContext.Provider value={colorMode}>
-            <ThemeProvider theme={customTheme[mode]}>
+            <ThemeProvider theme={theme[mode]}>
                 <Home />
             </ThemeProvider>
         </ColorModeContext.Provider>

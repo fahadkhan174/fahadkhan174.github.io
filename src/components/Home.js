@@ -180,6 +180,7 @@ const Home = () => {
                                                     'md'
                                                 )}`]: {
                                                     fontSize: '0.75em',
+                                                    wordBreak: 'break-word',
                                                 },
                                             }}
                                         >

@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+
+import { ThemeProvider } from '@mui/material/styles'
+
+import './App.css'
+import { ColorModeContext } from './theme/colorContext'
+import { theme as customTheme } from './theme'
+import Home from './components/Home'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [mode, setMode] = useState('dark')
+
+    const colorMode = React.useMemo(
+        () => ({
+            toggleColorMode: () => {
+                setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'))
+            },
+        }),
+        []
+    )
+
+    return (
+        <ColorModeContext.Provider value={colorMode}>
+            <ThemeProvider theme={customTheme[mode]}>
+                <Home />
+            </ThemeProvider>
+        </ColorModeContext.Provider>
+    )
 }
 
-export default App;
+export default App

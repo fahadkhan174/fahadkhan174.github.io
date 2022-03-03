@@ -67,7 +67,7 @@ const details = {
         title: 'Experience',
         items: [
             {
-                title: 'Motorola Solutions Interprise (TCS) (01-Jan-2021 To 28-Feb-2022)',
+                title: 'Motorola Solutions Interprise (TCS) (01-Jan-2020 To 28-Feb-2022)',
                 description: (
                     <>
                         Involved in the Requirement Analysis for new features,
@@ -86,7 +86,7 @@ const details = {
                 ),
             },
             {
-                title: 'Royal Bank of Scotland (TCS) (01-May-2019 To 11-Dec-2020)',
+                title: 'Royal Bank of Scotland (TCS) (01-Jan-2019 To 11-Dec-2020)',
                 description: (
                     <>
                         Created web application components using React Along
@@ -101,7 +101,7 @@ const details = {
                 ),
             },
             {
-                title: 'Astellas Pharma (TCS) (22-Sep-2018 To 31-Dec-2019)',
+                title: 'Astellas Pharma (TCS) (22-Sep-2017 To 31-Dec-2018)',
                 description: (
                     <>
                         Worked on <AnimatedText>Spring MVC</AnimatedText> for
@@ -114,7 +114,7 @@ const details = {
                 ),
             },
             {
-                title: 'Projects and Development India Ltd. (TCS) (29-Aug-2016 To 31-Aug-2018)',
+                title: 'Projects and Development India Ltd. (TCS) (29-Aug-2016 To 31-Aug-2017)',
                 description: (
                     <>
                         Involved in Development Support activities, worked

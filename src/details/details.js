@@ -17,10 +17,9 @@ const details = {
             >
                 Fahad
             </strong>
-            . I specialize in building complex, fast{' '}
-            <AnimatedText>
-                ReactJS user interfaces and data‑intensive software systems.
-            </AnimatedText>
+            . I specialize in building data‑intensive software systems using{' '}
+            <AnimatedText>Sprinboot, JPA, Microservices</AnimatedText> and
+            complex <AnimatedText>ReactJS</AnimatedText> user interfaces
         </>
     ),
     skills: {
@@ -30,8 +29,8 @@ const details = {
                 title: 'Languages',
                 text: (
                     <>
-                        Proficient in&nbsp;
-                        <AnimatedText>JavaScript</AnimatedText>, core Java
+                        <AnimatedText>Java</AnimatedText> and{' '}
+                        <AnimatedText>JavaScript</AnimatedText>
                     </>
                 ),
             },
@@ -39,8 +38,10 @@ const details = {
                 title: 'Frameworks',
                 text: (
                     <>
-                        <AnimatedText>ReactJS</AnimatedText>,&nbsp;
-                        <AnimatedText>Redux</AnimatedText>&nbsp;and Spring MVC
+                        <AnimatedText>SpringBoot</AnimatedText>,&nbsp;
+                        <AnimatedText>Microservices</AnimatedText>,&nbsp;
+                        <AnimatedText>JPA</AnimatedText>,&nbsp;
+                        <AnimatedText>ReactJS</AnimatedText>&nbsp;
                     </>
                 ),
             },
@@ -67,21 +68,18 @@ const details = {
         title: 'Experience',
         items: [
             {
-                title: 'Motorola Solutions Interprise (TCS) (01-Jan-2020 To 28-Feb-2022)',
+                title: 'Motorola Solutions Interprise (TCS) (01-Jan-2021 To 28-Feb-2022)',
                 description: (
                     <>
-                        Involved in the Requirement Analysis for new features,
-                        discussions on <AnimatedText>UX Designs</AnimatedText>,
-                        and providing alternatives if facing limitations due to
-                        design or library selections. Created high performant
-                        and complex UI component, sometimes using 3rd party
-                        libraries like{' '}
+                        Involved in the Requirement Analysis for features,
+                        discussions on{' '}
+                        <AnimatedText>Design and Development</AnimatedText>.
+                        Implementation of business logic and frontend components using{' '}
                         <AnimatedText>
-                            Redux Thunk, Material UI framework, Material-Table,
-                            React Bootstrap, React Table, React Select{' '}
+                            Springboot, Microservices, ReactJS, Redux Thunk,
+                            Material UI framework{' '}
                         </AnimatedText>
-                        etc., was mostly consuming REST APIs but help in
-                        troubleshooting basic middleware (NodeJS)
+                        etc.
                     </>
                 ),
             },

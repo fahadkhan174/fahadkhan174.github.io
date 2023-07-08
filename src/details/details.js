@@ -1,4 +1,5 @@
 import GitHubIcon from '@mui/icons-material/GitHub'
+import InstagramIcon  from '@mui/icons-material/Instagram'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail'
@@ -187,6 +188,25 @@ const details = {
                     />
                 ),
                 desc: 'https://github.com/fahadkhan174',
+            },
+            {
+                icon: (
+                    <InstagramIcon
+                        sx={{
+                            cursor: 'pointer',
+                            fontSize: '1.5em',
+                            color: '#1DA1F2',
+                        }}
+                        onClick={() =>
+                            window.open(
+                                'https://instagram.com/fahadkhan174',
+                                '_blank',
+                                'noopener,noreferrer'
+                            )
+                        }
+                    />
+                ),
+                desc: 'https://instagram.com/fahadkhan174',
             },
             {
                 icon: (

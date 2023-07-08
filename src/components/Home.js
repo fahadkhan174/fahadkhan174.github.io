@@ -133,10 +133,12 @@ const Home = () => {
                                             xs={12}
                                             sx={{
                                                 fontSize: '0.5em',
+                                                marginLeft: '1em',
                                                 [`${theme.breakpoints.down(
                                                     'md'
                                                 )}`]: {
                                                     fontSize: '0.75em',
+                                                    marginLeft: '1em'
                                                 },
                                             }}
                                         >
@@ -160,19 +162,33 @@ const Home = () => {
                             <Grid item xs={12} sx={{ paddingBottom: '0.1em' }}>
                                 {details.socials.title}
                             </Grid>
-                            {details.socials.items.map((item, index) => (
-                                <Grid item xs={12} key={index}>
+                            {details.socials.items.map((item) => (
+                                <Grid
+                                    item xs={12}
+                                    key={item.desc}
+                                >
                                     <Grid
                                         container
                                         justifyContent='center'
                                         alignItems='center'
+                                        sx={{
+                                            fontSize: '0.75em',
+                                            cursor: 'pointer'
+                                        }}
+                                        onClick={() =>
+                                            window.open(
+                                                `${item.desc}`,
+                                                '_blank',
+                                                'noopener,noreferrer'
+                                            )
+                                        }
                                     >
-                                        <Grid item md={3} xs={12}>
+                                        <Grid item md={1} xs={12}>
                                             {item.icon}{' '}
                                         </Grid>
                                         <Grid
                                             item
-                                            md={9}
+                                            md={11}
                                             xs={12}
                                             sx={{
                                                 fontSize: '0.5em',

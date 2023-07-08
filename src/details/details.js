@@ -48,7 +48,7 @@ const details = {
             },
             {
                 title: 'Server Side Technologies',
-                text: 'Servlet, JSP’s, Maven',
+                text: 'Servlet, JSP’s, Maven, Gradle',
             },
             {
                 title: 'Client Side Technologies',
@@ -61,7 +61,11 @@ const details = {
             },
             {
                 title: 'Software & Tools',
-                text: 'Eclipse, Oracle SQL Developer, Visual Studio Code',
+                text: (
+                    <>
+                        <AnimatedText>IntelliJ IDEA</AnimatedText>, Eclipse, Oracle SQL Developer, Visual Studio Code
+                    </>
+                ),
             },
         ],
     },
@@ -80,8 +84,30 @@ const details = {
                             Worked on creating <AnimatedText>scheduler scripts</AnimatedText> for
                             cleaning up db, redundant data or data fixes.
                         </li>
-                            <AnimatedText>Version upgrades</AnimatedText> for platform repos dependencies,
-                            troubleshoot issues, code reviews etc.
+                        <AnimatedText>Version upgrades</AnimatedText> for platform repos dependencies,
+                        troubleshoot issues, code reviews etc.
+                        <li>
+                            Involved in all phases of SDLC from analysis, design, developement, testing, implementation
+                            and maintenance.
+                        </li>
+                        <li>
+                            Trained new members on application functionalities and troubleshooting errors.
+                        </li>
+                    </ul>
+                ),
+            },
+            {
+                title: 'Microsoft (TCS) (15-Apr-2022 To 19-Aug-2022)',
+                description: (
+                    <ul>
+                        <li>
+                            Worked on <AnimatedText>migrating a monolith</AnimatedText> application to Springboot based {' '}
+                            <AnimatedText>microservices</AnimatedText> architecture with frontend built in ReactJS.
+                        </li>
+                        <li>Created a feature where we use docfx tool to create blobs for
+                            repo, store in Azure storage and serve content through webapp
+                            deployed over <AnimatedText>Azure</AnimatedText> webservices.
+                        </li>
                         <li>
                             Involved in all phases of SDLC from {' '}
                             <AnimatedText>analysis, design, developement, testing, implementation
@@ -94,75 +120,73 @@ const details = {
                 ),
             },
             {
-                title: 'Microsoft (TCS) (15-Apr-2022 To 19-Aug-2022)',
-                description: (
-                    <>
-                        Worked on migrating a monolith application to Springboot based
-                        microservices architecture with frontend built in ReactJS.
-                        Created a feature where we use docfx tool to create blobs for
-                        repo, store in azure storage and serve content through webapp
-                        deployed over azure webservices.
-                        Involved in all phases of SDLC from {' '}
-                        <AnimatedText>analysis, design, developement, testing, implementation
-                            and maintenance</AnimatedText>.
-                        Trained new members on application functionalities and troubleshooting errors.
-                    </>
-                ),
-            },
-            {
                 title: 'Motorola Solutions Interprise (TCS) (01-Jan-2020 To 28-Feb-2022)',
                 description: (
-                    <>
-                        Involved in the Requirement Analysis for features,
-                        discussions on{' '}
-                        <AnimatedText>Design and Development</AnimatedText>.
-                        Implementation of business logic and frontend components using{' '}
-                        <AnimatedText>
-                            Springboot, Microservices, ReactJS, Redux Thunk,
-                            Material UI framework{' '}
-                        </AnimatedText>
-                        etc.
-                    </>
+                    <ul>
+                        <li>Involved in the Requirement Analysis for features,
+                            discussions on{' '}
+                            <AnimatedText > Design and Development</AnimatedText>.
+                        </li>
+                        <li>
+                            Implementation of business logic and frontend components using{' '}
+                            <AnimatedText>
+                                Springboot, Microservices, ReactJS, Redux Thunk,
+                                Material UI framework{' '}
+                            </AnimatedText>
+                            etc.
+                        </li>
+                    </ul>
                 ),
             },
             {
                 title: 'Royal Bank of Scotland (TCS) (01-Jan-2019 To 11-Dec-2020)',
                 description: (
-                    <>
-                        Created web application components using React Along
-                        with customer WebSDK, used third party libraries like{' '}
-                        <AnimatedText>
-                            Redux, React Bootstrap, React-Table
-                        </AnimatedText>{' '}
-                        etc., worked on design documents based on the features
-                        and functionalities to provide with the migrated
-                        application on newer technology stack
-                    </>
+                    <ul>
+                        <li>Created web application components using React Along
+                            with customer WebSDK, used third party libraries like{' '}
+                            <AnimatedText>
+                                Redux, React Bootstrap, React-Table
+                            </AnimatedText>{' '}
+                            etc.
+                        </li >
+                        <li>
+                            Worked on design documents based on the features
+                            and functionalities to provide with the migrated
+                            application on newer technology stack.
+                        </li>
+                    </ul>
                 ),
             },
             {
                 title: 'Astellas Pharma (TCS) (22-Sep-2017 To 31-Dec-2018)',
                 description: (
-                    <>
-                        Worked on <AnimatedText>Spring MVC</AnimatedText> for
-                        development and act as first level support for customer
-                        problems, prepared various POCs build on{' '}
-                        <AnimatedText>Java, Spring</AnimatedText> and{' '}
-                        <AnimatedText>MongoDB</AnimatedText> and involved in
-                        analysis and requirement gathering for new features
-                    </>
+                    <ul>
+                        <li>Worked on <AnimatedText>Spring MVC</AnimatedText> for
+                            development and act as first level support for customer
+                            problems, prepared various POCs build on{' '}
+                            <AnimatedText>Java, Spring</AnimatedText> and{' '}
+                            <AnimatedText>MongoDB</AnimatedText>.
+                        </li>
+                        <li>Involved in
+                            analysis and requirement gathering for new features
+                        </li>
+                    </ul>
                 ),
             },
             {
                 title: 'Projects and Development India Ltd. (TCS) (29-Aug-2016 To 31-Aug-2017)',
                 description: (
-                    <>
-                        Involved in Development Support activities, worked
-                        extensively on java to create custom actions in
-                        Documentum and creating jobs in java to create periodic
-                        reports & prepared management reports and perform
-                        daily/weekly checklists
-                    </>
+                    <ul>
+                        <li>Involved in Development Support activities, worked
+                            extensively on java to create custom actions in
+                            Documentum.
+                        </li>
+                        <li>
+                            Creating <AnimatedText>cronjobs</AnimatedText> running java scripts to create periodic
+                            reports & prepared management reports and perform
+                            daily/weekly checklists.
+                        </li>
+                    </ul>
                 ),
             },
         ],
@@ -176,7 +200,7 @@ const details = {
                         sx={{ cursor: 'pointer', fontSize: '1.5em' }}
                     />
                 ),
-                desc: 'fahadkhan174@gmail.com',
+                desc: 'mailto:fahadkhan174@gmail.com',
             },
             {
                 icon: (
@@ -185,13 +209,6 @@ const details = {
                             cursor: 'pointer',
                             fontSize: '1.5em',
                         }}
-                        onClick={() =>
-                            window.open(
-                                'https://github.com/fahadkhan174',
-                                '_blank',
-                                'noopener,noreferrer'
-                            )
-                        }
                     />
                 ),
                 desc: 'https://github.com/fahadkhan174',
@@ -204,13 +221,6 @@ const details = {
                             fontSize: '1.5em',
                             color: '#D62976',
                         }}
-                        onClick={() =>
-                            window.open(
-                                'https://instagram.com/fahadkhan174',
-                                '_blank',
-                                'noopener,noreferrer'
-                            )
-                        }
                     />
                 ),
                 desc: 'https://instagram.com/fahadkhan174',
@@ -223,13 +233,6 @@ const details = {
                             fontSize: '1.5em',
                             color: '#1DA1F2',
                         }}
-                        onClick={() =>
-                            window.open(
-                                'https://twitter.com/fahadkhan174',
-                                '_blank',
-                                'noopener,noreferrer'
-                            )
-                        }
                     />
                 ),
                 desc: 'https://twitter.com/fahadkhan174',
@@ -242,13 +245,6 @@ const details = {
                             fontSize: '1.5em',
                             color: '#4267B2',
                         }}
-                        onClick={() =>
-                            window.open(
-                                'https://www.facebook.com/profile.php?id=100001866601467',
-                                '_blank',
-                                'noopener,noreferrer'
-                            )
-                        }
                     />
                 ),
                 desc: 'https://www.facebook.com/profile.php?id=100001866601467',

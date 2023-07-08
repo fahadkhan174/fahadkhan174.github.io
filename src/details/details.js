@@ -1,5 +1,5 @@
 import GitHubIcon from '@mui/icons-material/GitHub'
-import InstagramIcon  from '@mui/icons-material/Instagram'
+import InstagramIcon from '@mui/icons-material/Instagram'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail'
@@ -71,19 +71,26 @@ const details = {
             {
                 title: 'AMEX (IBM) (23-Dec-2022 To Present)',
                 description: (
-                    <>
-                        Enhancing and maintaining a number of platform repos that are consumed
-                        by other teams as dependencies ex- kafka-client, rest-client etc.
-                        Worked on creating <AnimatedText>scheduler scripts</AnimatedText> for
-                        cleaning up db, redundant data or
-                        data fixes. <AnimatedText>Version</AnimatedText> upgrades for platform
-                        repos dependencies, troubleshoot
-                        issues, code reviews etc.
-                        Involved in all phases of SDLC from {' '}
-                        <AnimatedText>analysis, design, developement, testing, implementation
-                            and maintenance</AnimatedText>.
-                        Trained new members on application functionalities and troubleshooting errors.
-                    </>
+                    <ul>
+                        <li>
+                            Enhancing and maintaining a number of platform repos that are consumed
+                            by other teams as dependencies ex- kafka-client, rest-client etc.
+                        </li>
+                        <li>
+                            Worked on creating <AnimatedText>scheduler scripts</AnimatedText> for
+                            cleaning up db, redundant data or data fixes.
+                        </li>
+                            <AnimatedText>Version upgrades</AnimatedText> for platform repos dependencies,
+                            troubleshoot issues, code reviews etc.
+                        <li>
+                            Involved in all phases of SDLC from {' '}
+                            <AnimatedText>analysis, design, developement, testing, implementation
+                                and maintenance</AnimatedText>.
+                        </li>
+                        <li>
+                            Trained new members on application functionalities and troubleshooting errors.
+                        </li>
+                    </ul>
                 ),
             },
             {

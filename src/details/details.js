@@ -195,7 +195,7 @@ const details = {
                         sx={{
                             cursor: 'pointer',
                             fontSize: '1.5em',
-                            color: '#1DA1F2',
+                            color: '#D62976',
                         }}
                         onClick={() =>
                             window.open(

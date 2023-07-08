@@ -68,7 +68,7 @@ const details = {
         title: 'Experience',
         items: [
             {
-                title: 'Microsoft (TCS) (23-Dec-2022 To Present)',
+                title: 'AMEX (IBM) (23-Dec-2022 To Present)',
                 description: (
                     <>
                         Enhancing and maintaining a number of platform repos that are consumed

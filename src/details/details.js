@@ -68,7 +68,41 @@ const details = {
         title: 'Experience',
         items: [
             {
-                title: 'Motorola Solutions Interprise (TCS) (01-Jan-2021 To 28-Feb-2022)',
+                title: 'Microsoft (TCS) (23-Dec-2022 To Present)',
+                description: (
+                    <>
+                        Enhancing and maintaining a number of platform repos that are consumed
+                        by other teams as dependencies ex- kafka-client, rest-client etc.
+                        Worked on creating <AnimatedText>scheduler scripts</AnimatedText> for
+                        cleaning up db, redundant data or
+                        data fixes. <AnimatedText>Version</AnimatedText> upgrades for platform
+                        repos dependencies, troubleshoot
+                        issues, code reviews etc.
+                        Involved in all phases of SDLC from {' '}
+                        <AnimatedText>analysis, design, developement, testing, implementation
+                            and maintenance</AnimatedText>.
+                        Trained new members on application functionalities and troubleshooting errors.
+                    </>
+                ),
+            },
+            {
+                title: 'Microsoft (TCS) (15-Apr-2022 To 19-Aug-2022)',
+                description: (
+                    <>
+                        Worked on migrating a monolith application to Springboot based
+                        microservices architecture with frontend built in ReactJS.
+                        Created a feature where we use docfx tool to create blobs for
+                        repo, store in azure storage and serve content through webapp
+                        deployed over azure webservices.
+                        Involved in all phases of SDLC from {' '}
+                        <AnimatedText>analysis, design, developement, testing, implementation
+                            and maintenance</AnimatedText>.
+                        Trained new members on application functionalities and troubleshooting errors.
+                    </>
+                ),
+            },
+            {
+                title: 'Motorola Solutions Interprise (TCS) (01-Jan-2020 To 28-Feb-2022)',
                 description: (
                     <>
                         Involved in the Requirement Analysis for features,

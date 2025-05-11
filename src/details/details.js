@@ -1,8 +1,8 @@
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail'
+import FacebookIcon from '@mui/icons-material/Facebook'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import TwitterIcon from '@mui/icons-material/Twitter'
-import FacebookIcon from '@mui/icons-material/Facebook'
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail'
 
 import AnimatedText from '../theme/AnimatedText'
 
@@ -19,7 +19,7 @@ const details = {
                 Fahad
             </strong>
             . I specialize in building data‑intensive software systems using{' '}
-            <AnimatedText>Sprinboot, JPA, Microservices</AnimatedText> and
+            <AnimatedText>Sprinboot, Microservices</AnimatedText> and
             complex <AnimatedText>ReactJS</AnimatedText> user interfaces
         </>
     ),
@@ -41,8 +41,27 @@ const details = {
                     <>
                         <AnimatedText>SpringBoot</AnimatedText>,&nbsp;
                         <AnimatedText>Microservices</AnimatedText>,&nbsp;
-                        <AnimatedText>JPA</AnimatedText>,&nbsp;
                         <AnimatedText>ReactJS</AnimatedText>&nbsp;
+                    </>
+                ),
+            },
+            {
+                title: 'Client Side Technologies',
+                text: (
+                    <>
+                        HTML, CSS, Bootstrap,{' '}
+                        <AnimatedText>Material UI</AnimatedText>, Ant Design,&nbsp;
+                        <AnimatedText>TailwindCSS</AnimatedText>
+                    </>
+                ),
+            },
+            {
+                title: 'Databases',
+                text: (
+                    <>
+                        <AnimatedText>MongoDB</AnimatedText>,
+                        MySQL, Couchbase,&nbsp;
+                        <AnimatedText>IBM Cloudant</AnimatedText>&nbsp;
                     </>
                 ),
             },
@@ -50,15 +69,7 @@ const details = {
                 title: 'Server Side Technologies',
                 text: 'Servlet, JSP’s, Maven, Gradle',
             },
-            {
-                title: 'Client Side Technologies',
-                text: (
-                    <>
-                        HTML, CSS, Bootstrap,{' '}
-                        <AnimatedText>Material UI</AnimatedText>, Ant Design
-                    </>
-                ),
-            },
+
             {
                 title: 'Software & Tools',
                 text: (
@@ -73,7 +84,7 @@ const details = {
         title: 'Experience',
         items: [
             {
-                title: 'AMEX (IBM) (23-Dec-2022 To Present)',
+                title: 'IBM (AMEX) (Dec-2022 To Present)',
                 description: (
                     <ul>
                         <li>
@@ -84,8 +95,10 @@ const details = {
                             Worked on creating <AnimatedText>scheduler scripts</AnimatedText> for
                             cleaning up db, redundant data or data fixes.
                         </li>
-                        <AnimatedText>Version upgrades</AnimatedText> for platform repos dependencies,
-                        troubleshoot issues, code reviews etc.
+                        <li>
+                            <AnimatedText>Version upgrades</AnimatedText> for platform repos dependencies,
+                            troubleshoot issues, code reviews etc.
+                        </li>
                         <li>
                             Involved in all phases of SDLC from analysis, design, developement, testing, implementation
                             and maintenance.
@@ -97,7 +110,7 @@ const details = {
                 ),
             },
             {
-                title: 'Microsoft (TCS) (15-Apr-2022 To 19-Aug-2022)',
+                title: 'TCS (Microsoft) (Apr-2022 To Aug-2022)',
                 description: (
                     <ul>
                         <li>
@@ -120,7 +133,7 @@ const details = {
                 ),
             },
             {
-                title: 'Motorola Solutions Interprise (TCS) (01-Jan-2020 To 28-Feb-2022)',
+                title: 'TCS (Motorola Solutions Interprise) (Jan-2020 To Feb-2022)',
                 description: (
                     <ul>
                         <li>Involved in the Requirement Analysis for features,
@@ -139,7 +152,7 @@ const details = {
                 ),
             },
             {
-                title: 'Royal Bank of Scotland (TCS) (01-Jan-2019 To 11-Dec-2020)',
+                title: 'TCS (Royal Bank of Scotland) (Jan-2019 To Dec-2020)',
                 description: (
                     <ul>
                         <li>Created web application components using React Along
@@ -158,7 +171,7 @@ const details = {
                 ),
             },
             {
-                title: 'Astellas Pharma (TCS) (22-Sep-2017 To 31-Dec-2018)',
+                title: 'TCS (Astellas Pharma) (Sep-2017 To Dec-2018)',
                 description: (
                     <ul>
                         <li>Worked on <AnimatedText>Spring MVC</AnimatedText> for
@@ -174,7 +187,7 @@ const details = {
                 ),
             },
             {
-                title: 'Projects and Development India Ltd. (TCS) (29-Aug-2016 To 31-Aug-2017)',
+                title: 'TCS (Projects and Development India Ltd.) (Aug-2016 To Aug-2017)',
                 description: (
                     <ul>
                         <li>Involved in Development Support activities, worked

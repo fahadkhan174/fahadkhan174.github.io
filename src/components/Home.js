@@ -8,7 +8,8 @@ import SideNavbar from './SideNavbar'
 import details from '../details/details'
 
 const HeroSection = styled('div')(({ theme }) => ({
-    padding: '4.5em 2em 0 2em',
+    height: '100vh',
+    padding: '2.5em 2em 0 2em',
     textAlign: 'left',
     ...theme.typography.body2,
     fontFamily: 'Inter',
@@ -24,7 +25,7 @@ const HeroSection = styled('div')(({ theme }) => ({
 }))
 
 const Item = styled('div')(({ theme }) => ({
-    padding: '4.5em 2em 2em 2em',
+    padding: '1em 2em 2em 2em',
     textAlign: 'left',
     ...theme.typography.body2,
     fontFamily: 'Inter',

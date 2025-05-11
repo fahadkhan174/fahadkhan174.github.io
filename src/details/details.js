@@ -84,7 +84,51 @@ const details = {
         title: 'Experience',
         items: [
             {
-                title: 'IBM (AMEX) (Dec-2022 To Present)',
+                title: 'IBM (VTS, IBM Italy) (Nov-2023 To present)',
+                description: (
+                    <ul>
+                        <li>
+                            Migrating a X-platform application to cloud applications build
+                            upon Springboot and Angular, following microservices design.
+                        </li>
+                        <li>
+                            Implemented the <AnimatedText>authentication</AnimatedText> mechanisms using
+                            cookies and related session APIs for FE integration.
+                        </li>
+                        <li>
+                            Creating Rest APIs following standard coding practices, implementing
+                            unit tests with Junit and Mockito, review PRs from other teammates, interview candidates,
+                            and train new team members.
+                        </li>
+                        <li>
+                            Create and integrate APIs to show <AnimatedText>IBM DB2</AnimatedText> data in new interface
+                            till the time old application is not sunset.
+                        </li>
+                        <li>
+                            Creating different <AnimatedText>schedulers</AnimatedText> in spring for report
+                            generation in excels or csv and sending to user via emails asynchronously.
+                        </li>
+                        <li>
+                            Proposed and implemented use of Javadoc-Scribe library to maintain swagger
+                            API-docs using standard java-docs at controller and method mappings.
+                        </li>
+                        <li>
+                            Have integrated multiple third-party libraries such as <AnimatedText>Apache POI,
+                                Java Email, newer Cloudant SDK</AnimatedText> for performance metrics etc. singlehandedly.
+                        </li>
+                        <li>
+                            Closely working with client personnels to understand the requirements/existing
+                            functionalities to be transformed to newer tech stack.
+                        </li>
+                        <li>
+                            Involved in all phases of the SDLC (Software Development Life Cycle) from analysis,
+                            design, development, testing, implementation, and maintenance.
+                        </li>
+                    </ul>
+                ),
+            },
+            {
+                title: 'IBM (AMEX) (Dec-2022 To Nov-2023)',
                 description: (
                     <ul>
                         <li>
@@ -210,7 +254,9 @@ const details = {
             {
                 icon: (
                     <AlternateEmailIcon
-                        sx={{ cursor: 'pointer', fontSize: '1.5em' }}
+                        sx={{
+                            fontSize: '1.5em'
+                        }}
                     />
                 ),
                 desc: 'mailto:fahadkhan174@gmail.com',
@@ -219,7 +265,6 @@ const details = {
                 icon: (
                     <GitHubIcon
                         sx={{
-                            cursor: 'pointer',
                             fontSize: '1.5em',
                         }}
                     />
@@ -230,7 +275,6 @@ const details = {
                 icon: (
                     <InstagramIcon
                         sx={{
-                            cursor: 'pointer',
                             fontSize: '1.5em',
                             color: '#D62976',
                         }}
@@ -242,7 +286,6 @@ const details = {
                 icon: (
                     <TwitterIcon
                         sx={{
-                            cursor: 'pointer',
                             fontSize: '1.5em',
                             color: '#1DA1F2',
                         }}
@@ -254,14 +297,13 @@ const details = {
                 icon: (
                     <FacebookIcon
                         sx={{
-                            cursor: 'pointer',
                             fontSize: '1.5em',
                             color: '#4267B2',
                         }}
                     />
                 ),
                 desc: 'https://www.facebook.com/profile.php?id=100001866601467',
-            },
+            }
         ],
     },
 }

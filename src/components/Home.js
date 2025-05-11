@@ -13,14 +13,14 @@ const HeroSection = styled('div')(({ theme }) => ({
     textAlign: 'left',
     ...theme.typography.body2,
     fontFamily: 'Inter',
-    fontSize: '4.5em',
+    fontSize: '3.5em',
     fontWeight: '200',
     color: theme.palette.text.primary,
     [`${theme.breakpoints.down('lg')}`]: {
-        fontSize: '3.5em',
+        fontSize: '2.5em',
     },
     [`${theme.breakpoints.down('md')}`]: {
-        fontSize: '2em',
+        fontSize: '1em',
     },
 }))
 
@@ -29,14 +29,14 @@ const Item = styled('div')(({ theme }) => ({
     textAlign: 'left',
     ...theme.typography.body2,
     fontFamily: 'Inter',
-    fontSize: '4.5em',
+    fontSize: '3.5em',
     fontWeight: '200',
     color: theme.palette.text.primary,
     [`${theme.breakpoints.down('lg')}`]: {
-        fontSize: '3.5em',
+        fontSize: '2.5em',
     },
     [`${theme.breakpoints.down('md')}`]: {
-        fontSize: '2em',
+        fontSize: '1em',
     },
 }))
 

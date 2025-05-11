@@ -1,11 +1,12 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 
 import { useTheme } from '@emotion/react'
-import Grid from '@mui/material/Grid'
 import styled from '@emotion/styled'
+import Grid from '@mui/material/Grid'
 
-import SideNavbar from './SideNavbar'
 import details from '../details/details'
+import SideNavbar from './SideNavbar'
+import SvelteSvg from './SvelteSvg'
 
 const HeroSection = styled('div')(({ theme }) => ({
     height: '100vh',
@@ -173,18 +174,14 @@ const Home = () => {
                                         justifyContent='center'
                                         alignItems='center'
                                         sx={{
-                                            fontSize: '0.75em',
-                                            cursor: 'pointer'
+                                            fontSize: '0.75em'
                                         }}
-                                        onClick={() =>
-                                            window.open(
-                                                `${item.desc}`,
-                                                '_blank',
-                                                'noopener,noreferrer'
-                                            )
-                                        }
                                     >
-                                        <Grid item md={1} xs={12}>
+                                        <Grid
+                                            item
+                                            md={1}
+                                            xs={12}
+                                        >
                                             {item.icon}{' '}
                                         </Grid>
                                         <Grid
@@ -200,12 +197,80 @@ const Home = () => {
                                                     wordBreak: 'break-word',
                                                 },
                                             }}
+
                                         >
-                                            {item.desc}
+                                            <span
+                                                style={{
+                                                    cursor: 'pointer'
+                                                }}
+                                                onClick={() =>
+                                                    window.open(
+                                                        `${item.desc}`,
+                                                        '_blank',
+                                                        'noopener,noreferrer'
+                                                    )
+                                                }
+                                                onKeyDown={(e) => {
+                                                    if (e.key === 'Enter' || e.key === ' ') {
+                                                        window.open(
+                                                            `${item.desc}`,
+                                                            '_blank',
+                                                            'noopener,noreferrer'
+                                                        );
+                                                    }
+                                                }}
+                                            >
+                                                {item.desc}
+                                            </span>
                                         </Grid>
                                     </Grid>
                                 </Grid>
                             ))}
+                            <Grid
+                                item xs={12}
+                                key={`svelte-app`}
+                            >
+                                <Grid
+                                    container
+                                    justifyContent='center'
+                                    alignItems='center'
+                                    sx={{
+                                        fontSize: '0.75em'
+                                    }}
+                                >
+                                    <Grid
+                                        item
+                                        md={1}
+                                        xs={12}
+                                    >
+                                        <SvelteSvg />
+                                    </Grid>
+                                    <Grid
+                                        item
+                                        md={11}
+                                        xs={12}
+                                        sx={{
+                                            fontSize: '0.5em',
+                                            [`${theme.breakpoints.down(
+                                                'md'
+                                            )}`]: {
+                                                fontSize: '0.75em',
+                                                wordBreak: 'break-word',
+                                            },
+                                        }}
+
+                                    >
+                                        <a
+                                            href='https://fahadkhan174.github.io/svelte'
+                                            style={{
+                                                textDecoration: 'none',
+                                                color: 'white'
+                                            }}>
+                                            https://fahadkhan174.github.io/svelte
+                                        </a>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
                         </Grid>
                     </Item>
                 </Grid>

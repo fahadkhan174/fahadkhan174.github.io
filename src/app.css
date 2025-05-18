@@ -1,3 +1,39 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@font-face {
+	font-display: swap;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/src/lib/font/Inter.ttf'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Pacifico';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/src/lib/font/Pacifico.ttf'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+	--color-background: rgb(217, 217, 217);
+	--color-yellowStrip: rgb(173, 126, 1);
+	--color-divBg: rgb(40, 40, 40);
+	--color-instagram: rgb(214, 41, 118);
+	--color-twitter: rgb(29, 161, 242);
+	--color-facebook: rgb(66, 103, 178);
+
+	--font-inter: Inter, sans-serif;
+	--font-pacifico: Pacifico, sans-serif;
+}
+
+@layer components {
+	body {
+		background-color: var(--color-background);
+	}
+}

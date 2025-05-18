@@ -88,7 +88,7 @@
 		<ol class="relative border-s dark:border-gray-700 dark:text-gray-400">
 			<li class="ms-6 mb-10">
 				<span class="absolute -start-4 flex h-8 w-8 items-center justify-center">
-					<span class="text-4xl text-green-700">•</span>
+					<span class="text-4xl text-fuchsia-500">•</span>
 				</span>
 				<h3 class="text-2xl leading-tight font-medium">IBM, (IBM Italy) (Nov-2023 To present)</h3>
 				<p class="mb-1 text-xl">

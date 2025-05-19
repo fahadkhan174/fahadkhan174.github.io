@@ -1,3 +1,10 @@
+<script>
+	import Envelope from '@/lib/svg/Envelope.svelte';
+	import Github from '@/lib/svg/Github.svelte';
+	import Instagram from '@/lib/svg/Instagram.svelte';
+	import LinkedIn from '@/lib/svg/LinkedIn.svelte';
+</script>
+
 <div class="bg-background dark:bg-gray-900 dark:text-white">
 	<div class="flex h-screen w-full flex-col justify-center p-4 md:px-36">
 		<div>
@@ -280,46 +287,37 @@
 		</div>
 	</div>
 
-	<div class="flex w-full flex-col gap-4 p-4 md:px-36">
+	<div class="flex h-50 w-full flex-col gap-4 p-4 md:px-36">
 		<h1 class="mb-4 text-2xl underline sm:text-4xl">Contacts</h1>
 		<div class="flex flex-wrap gap-3">
-			<div class="w-1/3 flex-auto rounded p-2 text-xl sm:text-2xl">
+			<div class="w-1/5 flex-auto rounded p-2 text-center text-xl sm:text-2xl">
 				<span class="group">
-					<a href="mailto:fahadkhan174@gmail.com" class="group-hover:underline">Email</a>
 					<a href="mailto:fahadkhan174@gmail.com" class="group-hover:text-blue-500">
-						(●'◡'●)
+						<Envelope classes="h-10 w-10 inline fill-current" />
 					</a>
 				</span>
 			</div>
-			<div class="w-1/3 flex-auto rounded p-2 text-xl sm:text-2xl">
+			<div class="w-1/5 flex-auto rounded p-2 text-center text-xl sm:text-2xl">
 				<span class="group">
-					<a href="https://github.com/fahadkhan174" class="group-hover:underline">Github</a>
 					<a href="https://github.com/fahadkhan174" class="group-hover:text-gray-500">
-						(▀̿Ĺ̯▀̿ ̿)
+						<Github classes="h-10 w-10 inline fill-current" />
 					</a>
 				</span>
 			</div>
-			<div class="w-1/3 flex-auto rounded p-2 text-xl sm:text-2xl">
+			<div class="w-1/5 flex-auto rounded p-2 text-center text-xl sm:text-2xl">
 				<span class="group">
-					<a href="https://twitter.com/fahadkhan174" class="group-hover:underline">Twitter</a>
-					<a href="https://twitter.com/fahadkhan174" class="group-hover:text-twitter">
-						(～￣▽￣)～
+					<a
+						href="https://www.linkedin.com/in/mohd-fahad-123205101/"
+						class="group-hover:text-twitter"
+					>
+						<LinkedIn classes="h-10 w-10 inline fill-current" />
 					</a>
 				</span>
 			</div>
-			<div class="w-1/3 flex-auto rounded p-2 text-xl sm:text-2xl">
+			<div class="w-1/5 flex-auto rounded p-2 text-center text-xl sm:text-2xl">
 				<span class="group">
-					<a href="https://instagram.com/fahadkhan174" class="group-hover:underline">Instagram</a>
 					<a href="https://instagram.com/fahadkhan174" class="group-hover:text-instagram">
-						(❁´◡`❁)
-					</a>
-				</span>
-			</div>
-			<div class="w-1/3 flex-auto rounded p-2 text-xl sm:text-2xl">
-				<span class="group">
-					<a href="https://www.facebook.com/profile.php?id=100001866601467" class="group-hover:underline">Facebook</a>
-					<a href="https://www.facebook.com/profile.php?id=100001866601467" class="group-hover:text-facebook">
-						(^///^)
+						<Instagram classes="h-10 w-10 inline fill-current" />
 					</a>
 				</span>
 			</div>

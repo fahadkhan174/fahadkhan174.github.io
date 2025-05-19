@@ -1,8 +1,9 @@
 <script>
-	import Envelope from '@/lib/svg/Envelope.svelte';
-	import Github from '@/lib/svg/Github.svelte';
-	import Instagram from '@/lib/svg/Instagram.svelte';
-	import LinkedIn from '@/lib/svg/LinkedIn.svelte';
+	import CogLoader from '@/lib/components/CogLoader.svelte';
+	import Envelope from '@/lib/components/Envelope.svelte';
+	import Github from '@/lib/components/Github.svelte';
+	import Instagram from '@/lib/components/Instagram.svelte';
+	import LinkedIn from '@/lib/components/LinkedIn.svelte';
 </script>
 
 <div class="bg-background dark:bg-gray-900 dark:text-white">
@@ -322,5 +323,8 @@
 				</span>
 			</div>
 		</div>
+	</div>
+	<div class="hidden h-50 w-full flex-col gap-4 p-4 md:px-36 lg:flex">
+		<CogLoader />
 	</div>
 </div>

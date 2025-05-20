@@ -7,7 +7,17 @@
 </script>
 
 <div class="bg-background dark:bg-gray-900 dark:text-white">
-	<div class="flex h-screen w-full flex-col justify-center p-4 md:px-36">
+	<nav
+		id="nav"
+		class="bg-background fixed top-0 z-10 flex w-full items-center justify-end gap-10 p-4 md:px-36 md:text-lg dark:bg-gray-900"
+	>
+		<a href="#about" class="hover:underline">About</a>
+		<a href="#skills" class="hover:underline">Skills</a>
+		<a href="#experience" class="hover:underline">Experience</a>
+		<a href="#contacts" class="hover:underline">Contacts</a>
+	</nav>
+
+	<section id="about" class="flex h-screen w-full flex-col justify-center p-4 md:px-36">
 		<div>
 			<div class="mb-4">
 				<h1 class="mb-3 text-4xl sm:text-6xl">Hi, I'm Fahad.</h1>
@@ -22,11 +32,11 @@
 				<p class="sm:text-2xl">Java • JavaScript • Springboot • ReactJS</p>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<!-- My Skills -->
-	<div class="mb-4 flex w-full flex-col gap-4 p-4 md:px-36">
-		<h1 class="mb-4 text-2xl underline sm:text-4xl">My Skills</h1>
+	<!-- Skills -->
+	<section id="skills" class="mb-4 flex w-full flex-col gap-4 p-4 pt-16 md:px-36">
+		<h1 class="mb-4 text-2xl underline sm:text-4xl">Skills</h1>
 		<div class="flex flex-wrap gap-3">
 			<div class="bg-divBg min-w-2/5 flex-auto rounded-xl p-4 text-white md:min-w-1/4">
 				<div class="font-jetbrains mb-4 text-xl">Languages</div>
@@ -89,9 +99,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div class="mb-4 flex w-full flex-col gap-4 p-4 md:px-36">
+	<!-- Experience -->
+	<section id="experience" class="mb-4 flex w-full flex-col gap-4 p-4 pt-16 md:px-36">
 		<h1 class="mb-4 text-2xl underline sm:text-4xl">Experience</h1>
 		<div>
 			<ol class="relative border-s dark:border-gray-700 dark:text-white">
@@ -286,9 +297,10 @@
 				</li>
 			</ol>
 		</div>
-	</div>
+	</section>
 
-	<div class="flex h-50 w-full flex-col gap-4 p-4 md:px-36">
+	<!-- Contacts -->
+	<section id="contacts" class="flex h-50 w-full flex-col gap-4 p-4 md:px-36">
 		<h1 class="mb-4 text-2xl underline sm:text-4xl">Contacts</h1>
 		<div class="flex flex-wrap gap-3">
 			<div class="w-1/5 flex-auto rounded p-2 text-center text-xl sm:text-2xl">
@@ -323,7 +335,9 @@
 				</span>
 			</div>
 		</div>
-	</div>
+	</section>
+
+	<!-- Animation -->
 	<div class="hidden h-50 w-full flex-col gap-4 p-4 md:px-36 lg:flex">
 		<CogLoader />
 	</div>

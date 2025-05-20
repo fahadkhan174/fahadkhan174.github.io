@@ -9,8 +9,8 @@
 		position: absolute;
 		top: calc(50% - 15rem);
 		left: calc(100% - 20rem);
-		width: 10rem;
-		height: 10rem;
+		width: 12rem;
+		height: 12rem;
 		border-radius: 50%;
 		perspective: 200rem;
 	}

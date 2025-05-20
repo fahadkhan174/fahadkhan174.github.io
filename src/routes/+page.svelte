@@ -305,14 +305,24 @@
 		<div class="flex flex-wrap gap-3">
 			<div class="w-1/5 flex-auto rounded p-2 text-center text-xl sm:text-2xl">
 				<span class="group">
-					<a href="mailto:fahadkhan174@gmail.com" class="group-hover:text-blue-500">
+					<a
+						href="mailto:fahadkhan174@gmail.com"
+						class="group-hover:text-blue-500"
+						referrerpolicy="no-referrer"
+						target="_blank"
+					>
 						<Envelope classes="h-10 w-10 inline fill-current" />
 					</a>
 				</span>
 			</div>
 			<div class="w-1/5 flex-auto rounded p-2 text-center text-xl sm:text-2xl">
 				<span class="group">
-					<a href="https://github.com/fahadkhan174" class="group-hover:text-gray-500">
+					<a
+						href="https://github.com/fahadkhan174"
+						class="group-hover:text-gray-500"
+						referrerpolicy="no-referrer"
+						target="_blank"
+					>
 						<Github classes="h-10 w-10 inline fill-current" />
 					</a>
 				</span>
@@ -322,6 +332,8 @@
 					<a
 						href="https://www.linkedin.com/in/mohd-fahad-123205101/"
 						class="group-hover:text-twitter"
+						referrerpolicy="no-referrer"
+						target="_blank"
 					>
 						<LinkedIn classes="h-10 w-10 inline fill-current" />
 					</a>
@@ -329,7 +341,12 @@
 			</div>
 			<div class="w-1/5 flex-auto rounded p-2 text-center text-xl sm:text-2xl">
 				<span class="group">
-					<a href="https://instagram.com/fahadkhan174" class="group-hover:text-instagram">
+					<a
+						href="https://instagram.com/fahadkhan174"
+						class="group-hover:text-instagram"
+						referrerpolicy="no-referrer"
+						target="_blank"
+					>
 						<Instagram classes="h-10 w-10 inline fill-current" />
 					</a>
 				</span>

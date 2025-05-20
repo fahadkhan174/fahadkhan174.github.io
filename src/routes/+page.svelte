@@ -9,7 +9,7 @@
 <div class="bg-background dark:bg-gray-900 dark:text-white">
 	<nav
 		id="nav"
-		class="bg-background fixed top-0 z-10 flex w-full items-center justify-end gap-10 p-4 md:px-36 md:text-lg dark:bg-gray-900"
+		class="bg-background fixed top-0 z-10 flex w-full items-center justify-end gap-8 p-4 md:px-36 md:text-lg dark:bg-gray-900"
 	>
 		<a href="#about" class="hover:underline">About</a>
 		<a href="#skills" class="hover:underline">Skills</a>

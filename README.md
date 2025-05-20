@@ -1,40 +1,38 @@
-# Hi there, I'm Fahad Khan! 👋
+# sv
 
-**Full Stack Engineer** | Java • JavaScript • Spring Boot • ReactJS
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
----
+## Creating a project
 
-🌟 Welcome to my GitHub profile! I’m a passionate developer who loves building robust web applications and exploring the latest in tech.
+If you're seeing this, you've probably already done this step. Congrats!
 
-## 🚀 About Me
+```bash
+# create a new project in the current directory
+npx sv create
 
-- 💻 **Profession:** Full Stack Engineer
-- 🛠️ **Tech Stack:** Java, JavaScript, Spring Boot, ReactJS
-- 🎨 **Hobbies:** Drawing, discovering new technologies, and continuous learning
+# create a new project in my-app
+npx sv create my-app
+```
 
-## 🌐 Featured Project
+## Developing
 
-- **Portfolio Website:**  
-  [fahadkhan174.github.io](https://fahadkhan174.github.io/)  
-  _A showcase of my work, skills, and journey as a developer!_
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-## 📫 Connect With Me
+```bash
+npm run dev
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohd-fahad-123205101/)
-[![Website](https://img.shields.io/badge/Website-222?logo=githubpages&logoColor=white)](https://fahadkhan174.github.io/)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/fahadkhan174/)
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-## 🧰 Tools & Technologies
+## Building
 
-![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?logo=spring-boot&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+To create a production version of your app:
 
-## ✨ Fun Fact
+```bash
+npm run build
+```
 
-When I’m not coding, you’ll find me sketching or diving into new technologies to keep my skills sharp and my curiosity alive!
+You can preview the production build with `npm run preview`.
 
----
-
-_Thanks for stopping by! Let’s connect and build something amazing together._ 🚀
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.

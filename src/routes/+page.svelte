@@ -15,6 +15,10 @@
 		<a href="#skills" class="hover:underline">Skills</a>
 		<a href="#experience" class="hover:underline">Experience</a>
 		<a href="#contacts" class="hover:underline">Contacts</a>
+		<a
+			href="https://github.com/fahadkhan174/fahadkhan174.github.io/raw/refs/heads/main/static/resume.docx"
+			class="hover:underline">Resume</a
+		>
 	</nav>
 
 	<section id="about" class="flex h-screen w-full flex-col justify-center p-4 md:px-36">

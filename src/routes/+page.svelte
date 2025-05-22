@@ -16,7 +16,7 @@
 		<a href="#experience" class="hover:underline">Experience</a>
 		<a href="#contacts" class="hover:underline">Contacts</a>
 		<a
-			href="https://github.com/fahadkhan174/fahadkhan174.github.io/raw/refs/heads/main/static/resume.docx"
+			href="https://github.com/fahadkhan174/fahadkhan174.github.io/raw/refs/heads/main/static/Mohd_Fahad_Resume.docx"
 			class="hover:underline">Resume</a
 		>
 	</nav>

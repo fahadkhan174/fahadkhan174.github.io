@@ -22,14 +22,14 @@
 			<div class="mb-4">
 				<h1 class="mb-3 text-4xl sm:text-6xl">Hi, I'm Fahad.</h1>
 				<div class="sm:text-2xl">
-					<p>Full Stack Engineer who develops user centeric products.</p>
+					<p>Full Stack Engineer who develops user centric products.</p>
 					<p>Passionate to create them with engineering and design principles.</p>
 					<p>Currently working with <span class="font-bold"> IBM⚡</span></p>
 				</div>
 			</div>
 			<div>
 				<h1 class="mb-3 text-2xl sm:text-4xl">Top Skills</h1>
-				<p class="sm:text-2xl">Java • JavaScript • Springboot • ReactJS</p>
+				<p class="sm:text-2xl">Java • JavaScript • SpringBoot • ReactJS</p>
 			</div>
 		</div>
 	</section>
@@ -51,9 +51,9 @@
 				<div class="font-jetbrains mb-4 text-xl">Frameworks</div>
 				<div>
 					<ul class="ml-4 list-disc">
-						<li>Springboot</li>
+						<li>SpringBoot</li>
 						<li>React</li>
-						<li>SveltKit *</li>
+						<li>SvelteKit *</li>
 					</ul>
 				</div>
 			</div>
@@ -140,10 +140,10 @@
 							<li>
 								Integrate multiple third-party libraries such as <span class="font-bold"
 									>Apache POI, Java Email, newer Cloudant SDK</span
-								> for performance metrics etc. singlehandedly.
+								> for performance metrics etc. single handedly.
 							</li>
 							<li>
-								Closely working with client personnels to understand the requirements/existing
+								Closely working with client personnel's to understand the requirements/existing
 								functionalities to be transformed to newer tech stack.
 							</li>
 						</ul>
@@ -172,7 +172,7 @@
 								issues, code reviews etc.
 							</li>
 							<li>
-								Involved in all phases of SDLC from analysis, design, developement, testing,
+								Involved in all phases of SDLC from analysis, design, development, testing,
 								implementation and maintenance.
 							</li>
 							<li>
@@ -210,7 +210,7 @@
 						<span class="text-4xl text-black dark:text-white">•</span>
 					</span>
 					<h3 class="text-2xl leading-tight font-medium">
-						TCS (Motorola Solutions Interprise) (Jan-2020 To Feb-2022)
+						TCS (Motorola Solutions Enterprise) (Jan-2020 To Feb-2022)
 					</h3>
 					<p class="mb-1 text-xl">
 						<span class="font-bold italic">Tech:</span> ReactJS, MUI, Redux Thunk
@@ -289,7 +289,7 @@
 								custom actions in Documentum.
 							</li>
 							<li>
-								Creating cronjobs running java scripts to create periodic reports & prepared
+								Creating cron jobs running java scripts to create periodic reports & prepared
 								management reports and perform daily/weekly checklists.
 							</li>
 						</ul>

@@ -23,13 +23,12 @@
 				<h1 class="mb-3 text-4xl sm:text-6xl">Hi, I'm Fahad.</h1>
 				<div class="sm:text-2xl">
 					<p>Full Stack Engineer who develops user centric products.</p>
-					<p>Passionate to create them with engineering and design principles.</p>
 					<p>Currently working with <span class="font-bold"> IBM⚡</span></p>
 				</div>
 			</div>
 			<div>
-				<h1 class="mb-3 text-2xl sm:text-4xl">Top Skills</h1>
-				<p class="sm:text-2xl">Java • JavaScript • SpringBoot • ReactJS</p>
+				<h1 class="mb-3 mt-3 text-2xl sm:text-4xl">Top Skills</h1>
+				<p class="sm:text-2xl">Java • SpringBoot • JavaScript • ReactJS</p>
 			</div>
 		</div>
 	</section>

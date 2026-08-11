@@ -341,7 +341,7 @@
 			<div class="w-1/5 flex-auto rounded p-2 text-center text-xl sm:text-2xl">
 				<span class="group">
 					<a
-						href="https://instagram.com/fahadkhan174"
+						href="https://instagram.com/fahad_clicks_"
 						class="group-hover:text-instagram"
 						referrerpolicy="no-referrer"
 						target="_blank"

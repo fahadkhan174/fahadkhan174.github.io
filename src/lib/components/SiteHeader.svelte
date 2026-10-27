@@ -93,7 +93,7 @@
 
 	<div class="container-x flex h-16 items-center justify-between">
 		<a href={logoHref} class="flex items-center gap-2.5" onclick={closeMenu}>
-			<span class="monogram" aria-hidden="true">FK</span>
+			<span class="monogram" aria-hidden="true">MF</span>
 			<span class="hidden text-sm font-medium tracking-tight sm:block">{profile.name}</span>
 			<span class="sr-only">— back to top</span>
 		</a>

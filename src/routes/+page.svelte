@@ -1,360 +1,265 @@
-<script>
-	import CogLoader from '@/lib/components/CogLoader.svelte';
-	import Envelope from '@/lib/components/Envelope.svelte';
-	import Github from '@/lib/components/Github.svelte';
-	import Instagram from '@/lib/components/Instagram.svelte';
-	import LinkedIn from '@/lib/components/LinkedIn.svelte';
+<script lang="ts">
+	import Arrow from '@/lib/components/Arrow.svelte';
+	import ProjectArt from '@/lib/components/ProjectArt.svelte';
+	import { inview } from '@/lib/actions/inview';
+	import { magnetic } from '@/lib/actions/magnetic';
+	import { spotlight } from '@/lib/actions/spotlight';
+	import { tilt } from '@/lib/actions/tilt';
+	import { experience, profile, projects, skillGroups, socials, stackLayers } from '@/lib/content';
 </script>
 
-<div class="bg-background dark:bg-gray-900 dark:text-white">
-	<nav
-		id="nav"
-		class="bg-background fixed top-0 z-10 flex w-full items-center justify-center gap-8 p-4 sm:justify-end sm:px-36 sm:text-xl dark:bg-gray-900"
-	>
-		<a href="#about" class="hover:underline">About</a>
-		<a href="#skills" class="hover:underline">Skills</a>
-		<a href="#experience" class="hover:underline">Experience</a>
-		<a href="#contacts" class="hover:underline">Contacts</a>
-	</nav>
+<!-- Hero -->
+<section id="about" class="relative overflow-hidden pt-28 pb-16 md:pt-32 md:pb-24" use:spotlight>
+	<div class="hero-grid pointer-events-none absolute inset-0 -z-10" aria-hidden="true"></div>
+	<div class="hero-spot" aria-hidden="true"></div>
 
-	<section id="about" class="flex h-screen w-full flex-col justify-center p-4 md:px-36">
-		<div>
-			<div class="mb-4">
-				<h1 class="mb-3 text-4xl sm:text-6xl">Hi, I'm Fahad.</h1>
-				<div class="sm:text-2xl">
-					<p>Full Stack Engineer who develops user centric products.</p>
-					<p>Currently working with <span class="font-bold"> IBM⚡</span></p>
-				</div>
+	<div class="container-x grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr]">
+		<div class="hero-in">
+			<p class="eyebrow flex items-center gap-2">
+				<span class="bg-accent inline-block h-1.5 w-1.5 rounded-full"></span>
+				{profile.role} <span class="text-line">/</span>
+				{profile.company}
+			</p>
+
+			<h1 class="hero-title">
+				Hi, I'm <br />Fahad<span class="accent-mark">.</span>
+			</h1>
+
+			<p class="lead mt-7 max-w-xl">
+				{profile.statement}
+			</p>
+
+			<div class="mt-9 flex flex-wrap items-center gap-3">
+				<a href="#work" class="btn btn-primary" use:magnetic>
+					View selected work
+					<Arrow />
+				</a>
+				<a href="#contact" class="btn btn-ghost">Get in touch</a>
 			</div>
-			<div>
-				<h1 class="mb-3 mt-3 text-2xl sm:text-4xl">Top Skills</h1>
-				<p class="sm:text-2xl">Java • SpringBoot • JavaScript • ReactJS</p>
-			</div>
+
+			<p class="hero-meta mt-10">
+				Since {profile.since} · {profile.stack.join(' · ')}
+			</p>
 		</div>
-	</section>
 
-	<!-- Skills -->
-	<section id="skills" class="mb-4 flex w-full flex-col gap-4 p-4 pt-16 md:px-36">
-		<h1 class="mb-4 text-2xl underline sm:text-4xl">Skills</h1>
-		<div class="flex flex-wrap gap-3">
-			<div class="bg-divBg min-w-2/5 flex-auto rounded-xl p-4 text-white md:min-w-1/4">
-				<div class="font-jetbrains mb-4 text-xl">Languages</div>
-				<div>
-					<ul class="ml-4 list-disc">
-						<li>Java</li>
-						<li>JavaScript</li>
-					</ul>
-				</div>
-			</div>
-			<div class="bg-divBg min-w-2/5 flex-auto rounded-xl p-4 text-white md:min-w-1/4">
-				<div class="font-jetbrains mb-4 text-xl">Frameworks</div>
-				<div>
-					<ul class="ml-4 list-disc">
-						<li>SpringBoot</li>
-						<li>React</li>
-						<li>SvelteKit *</li>
-					</ul>
-				</div>
-			</div>
-			<div class="bg-divBg min-w-2/5 flex-auto rounded-xl p-4 text-white md:min-w-1/4">
-				<div class="font-jetbrains mb-4 text-xl">Databases</div>
-				<div>
-					<ul class="ml-4 list-disc">
-						<li>MongoDB</li>
-						<li>MySQL</li>
-						<li>Couchbase</li>
-						<li>IBM Cloudant</li>
-					</ul>
-				</div>
-			</div>
-			<div class="bg-divBg min-w-2/5 flex-auto rounded-xl p-4 text-white md:min-w-1/4">
-				<div class="font-jetbrains mb-4 text-xl">Client Side Tech.</div>
-				<div>
-					<ul class="ml-4 list-disc">
-						<li>HTML, CSS</li>
-						<li>MUI, MantineUI</li>
-						<li>Bootstrap, TailwindCSS</li>
-					</ul>
-				</div>
-			</div>
-			<div class="bg-divBg min-w-2/5 flex-auto rounded-xl p-4 text-white md:min-w-1/4">
-				<div class="font-jetbrains mb-4 text-xl">Server Side Tech.</div>
-				<div>
-					<ul class="ml-4 list-disc">
-						<li>Maven, Gradle</li>
-						<li>Servlet, JSP’s</li>
-						<li>Apache POI, AWS S3</li>
-						<li>Github Actions *</li>
-					</ul>
-				</div>
-			</div>
-			<div class="bg-divBg min-w-2/5 flex-auto rounded-xl p-4 text-white md:min-w-1/4">
-				<div class="font-jetbrains mb-4 text-xl">Tools</div>
-				<div>
-					<ul class="ml-4 list-disc">
-						<li>IDEA, Eclipse</li>
-						<li>SQL Dev., VS Code</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Experience -->
-	<section id="experience" class="mb-4 flex w-full flex-col gap-4 p-4 pt-16 md:px-36">
-		<h1 class="mb-4 text-2xl underline sm:text-4xl">Experience</h1>
-		<div>
-			<ol class="relative border-s dark:border-gray-700 dark:text-white">
-				<li class="ms-6 mb-10">
-					<span class="absolute -start-4 flex h-8 w-8 items-center justify-center">
-						<span class="text-4xl text-fuchsia-500">•</span>
-					</span>
-					<h3 class="text-2xl leading-tight font-medium">IBM, (IBM Italy) (Nov-2023 To present)</h3>
-					<p class="mb-1 text-xl">
-						<span class="font-bold italic">Tech:</span> Springboot, Cloudant, IBM DB2, Node, Apache POI,
-						IBM COS SDK
-					</p>
-					<div class="ml-4">
-						<ul class="flex list-disc flex-col gap-1">
-							<li>
-								Migrating a X-platform application to cloud services build upon Springboot and
-								Angular, following microservices design.
-							</li>
-							<li>
-								Implemented the <span class="font-bold">authentication</span> mechanisms using cookies
-								and related session APIs for FE integration.
-							</li>
-							<li>
-								Create and integrate APIs to show <span class="font-bold">IBM DB2</span> data in new
-								interface till the time old application is not sunset.
-							</li>
-							<li>
-								Created <span class="font-bold">NodeJS script</span> to backup data from Cloudant and
-								store into S3 buckets using IBM COS SDK.
-							</li>
-							<li>
-								Proposed and implemented use of <span class="font-bold">Javadoc-Scribe library</span
-								> to maintain swagger API-docs using standard java-docs at controller and method mappings.
-							</li>
-							<li>
-								Integrate multiple third-party libraries such as <span class="font-bold"
-									>Apache POI, Java Email, newer Cloudant SDK</span
-								> for performance metrics etc. single handedly.
-							</li>
-							<li>
-								Closely working with client personnel's to understand the requirements/existing
-								functionalities to be transformed to newer tech stack.
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li class="ms-6 mb-10">
-					<span class="absolute -start-4 flex h-8 w-8 items-center justify-center">
-						<span class="text-4xl text-black dark:text-white">•</span>
-					</span>
-					<h3 class="text-2xl leading-tight font-medium">IBM (AMEX) (Dec-2022 To Nov-2023)</h3>
-					<p class="mb-1 text-xl">
-						<span class="font-bold italic">Tech:</span> Springboot, Vertx, Couchbase
-					</p>
-					<div class="ml-4">
-						<ul class="flex list-disc flex-col gap-1">
-							<li>
-								Enhancing and maintaining a number of platform repos that are consumed by other
-								teams as dependencies ex- kafka-client, rest-client etc.
-							</li>
-							<li>
-								Worked on creating <span class="font-bold">scheduler scripts</span> for cleaning up db,
-								redundant data or data fixes.
-							</li>
-							<li>
-								<span class="font-bold">Version upgrades</span> for platform repos dependencies, troubleshoot
-								issues, code reviews etc.
-							</li>
-							<li>
-								Involved in all phases of SDLC from analysis, design, development, testing,
-								implementation and maintenance.
-							</li>
-							<li>
-								Trained new members on application functionalities and troubleshooting errors.
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li class="ms-6 mb-10">
-					<span class="absolute -start-4 flex h-8 w-8 items-center justify-center">
-						<span class="text-4xl text-black dark:text-white">•</span>
-					</span>
-					<h3 class="text-2xl leading-tight font-medium">TCS (Microsoft) (Apr-2022 To Aug-2022)</h3>
-					<p class="mb-1 text-xl">
-						<span class="font-bold italic">Tech:</span> Springboot, Couchbase, ReactJS
-					</p>
-					<div class="ml-4">
-						<ul class="flex list-disc flex-col gap-1">
-							<li>
-								Worked on migrating a monolith application to Springboot based <span
-									class="font-bold">microservices</span
-								>
-								architecture with frontend built in <span class="font-bold">ReactJS</span>.
-							</li>
-							<li>
-								Created a feature where we use <span class="font-bold">docfx</span> tool to create blobs
-								for repo, store in Azure storage and serve content through webapp deployed over Azure
-								webservices.
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li class="ms-6 mb-10">
-					<span class="absolute -start-4 flex h-8 w-8 items-center justify-center">
-						<span class="text-4xl text-black dark:text-white">•</span>
-					</span>
-					<h3 class="text-2xl leading-tight font-medium">
-						TCS (Motorola Solutions Enterprise) (Jan-2020 To Feb-2022)
-					</h3>
-					<p class="mb-1 text-xl">
-						<span class="font-bold italic">Tech:</span> ReactJS, MUI, Redux Thunk
-					</p>
-					<div class="ml-4">
-						<ul class="flex list-disc flex-col gap-1">
-							<li>
-								Implementation of frontend features using <span class="font-bold"
-									>ReactJS, Redux Thunk, Material UI framework
-								</span> etc.
-							</li>
-							<li>
-								Involved in the Requirement Analysis for features, discussions on Design and
-								Development.
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li class="ms-6 mb-10">
-					<span class="absolute -start-4 flex h-8 w-8 items-center justify-center">
-						<span class="text-4xl text-black dark:text-white">•</span>
-					</span>
-					<h3 class="text-2xl leading-tight font-medium">
-						TCS (Royal Bank of Scotland) (Jan-2019 To Dec-2020)
-					</h3>
-					<p class="mb-1 text-xl">
-						<span class="font-bold italic">Tech:</span> Redux, React Bootstrap, React-Table
-					</p>
-					<div class="ml-4">
-						<ul class="flex list-disc flex-col gap-1">
-							<li>
-								Created web application components using React Along with customer WebSDK, used
-								third party libraries like Redux, React Bootstrap, React-Table etc.
-							</li>
-							<li>
-								Worked on design documents based on the features and functionalities to provide with
-								the migrated application on newer technology stack.
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li class="ms-6 mb-10">
-					<span class="absolute -start-4 flex h-8 w-8 items-center justify-center">
-						<span class="text-4xl text-black dark:text-white">•</span>
-					</span>
-					<h3 class="text-2xl leading-tight font-medium">
-						TCS (Astellas Pharma) (Sep-2017 To Dec-2018)
-					</h3>
-					<p class="mb-1 text-xl">
-						<span class="font-bold italic">Tech:</span> Springboot, MongoDB
-					</p>
-					<div class="ml-4">
-						<ul class="flex list-disc flex-col gap-1">
-							<li>
-								Worked on Spring MVC for development and act as first level support for customer
-								problems, prepared various POCs build on Java, Spring and MongoDB.
-							</li>
-							<li>Involved in analysis and requirement gathering for new features.</li>
-						</ul>
-					</div>
-				</li>
-				<li class="ms-6 mb-10">
-					<span class="absolute -start-4 flex h-8 w-8 items-center justify-center">
-						<span class="text-4xl text-black dark:text-white">•</span>
-					</span>
-					<h3 class="text-2xl leading-tight font-medium">
-						TCS (Projects and Development India Ltd.) (Aug-2016 To Aug-2017)
-					</h3>
-					<p class="mb-1 text-xl">
-						<span class="font-bold italic">Tech:</span> Java, Documentum
-					</p>
-					<div class="ml-4">
-						<ul class="flex list-disc flex-col gap-1">
-							<li>
-								Involved in Development Support activities, worked extensively on java to create
-								custom actions in Documentum.
-							</li>
-							<li>
-								Creating cron jobs running java scripts to create periodic reports & prepared
-								management reports and perform daily/weekly checklists.
-							</li>
-						</ul>
-					</div>
-				</li>
-			</ol>
-		</div>
-	</section>
-
-	<!-- Contacts -->
-	<section id="contacts" class="flex h-50 w-full flex-col gap-4 p-4 md:px-36">
-		<h1 class="mb-4 text-2xl underline sm:text-4xl">Contacts</h1>
-		<div class="flex flex-wrap gap-3">
-			<div class="w-1/5 flex-auto rounded p-2 text-center text-xl sm:text-2xl">
-				<span class="group">
-					<a
-						href="mailto:fahadkhan174@gmail.com"
-						class="group-hover:text-blue-500"
-						referrerpolicy="no-referrer"
-						target="_blank"
-					>
-						<Envelope classes="h-10 w-10 inline fill-current" />
-					</a>
+		<div class="stack-panel" aria-hidden="true">
+			<div class="stack-head">
+				<span>System map</span>
+				<span class="flex items-center gap-1.5">
+					<span class="bg-accent inline-block h-1.5 w-1.5 rounded-full"></span>
+					full stack
 				</span>
 			</div>
-			<div class="w-1/5 flex-auto rounded p-2 text-center text-xl sm:text-2xl">
-				<span class="group">
-					<a
-						href="https://github.com/fahadkhan174"
-						class="group-hover:text-gray-500"
-						referrerpolicy="no-referrer"
-						target="_blank"
-					>
-						<Github classes="h-10 w-10 inline fill-current" />
-					</a>
-				</span>
-			</div>
-			<div class="w-1/5 flex-auto rounded p-2 text-center text-xl sm:text-2xl">
-				<span class="group">
-					<a
-						href="https://www.linkedin.com/in/mohd-fahad-123205101/"
-						class="group-hover:text-twitter"
-						referrerpolicy="no-referrer"
-						target="_blank"
-					>
-						<LinkedIn classes="h-10 w-10 inline fill-current" />
-					</a>
-				</span>
-			</div>
-			<div class="w-1/5 flex-auto rounded p-2 text-center text-xl sm:text-2xl">
-				<span class="group">
-					<a
-						href="https://instagram.com/fahad_clicks_"
-						class="group-hover:text-instagram"
-						referrerpolicy="no-referrer"
-						target="_blank"
-					>
-						<Instagram classes="h-10 w-10 inline fill-current" />
-					</a>
-				</span>
-			</div>
-		</div>
-	</section>
 
-	<!-- Animation -->
-	<div class="hidden h-50 w-full flex-col gap-4 p-4 md:px-36 lg:flex">
-		<CogLoader />
+			{#each stackLayers as layer, i}
+				<div class="stack-row">
+					<span class="stack-idx">0{i + 1}</span>
+					<span class="stack-name">{layer.name}</span>
+					<span class="stack-tech">{layer.tech}</span>
+				</div>
+			{/each}
+
+			<p class="text-muted mt-4 px-1 font-mono text-[0.625rem] leading-relaxed">
+				One engineer across the whole stack — from the request to the record.
+			</p>
+		</div>
 	</div>
-</div>
+</section>
+
+<!-- Selected work -->
+<section id="work" class="border-line border-t py-16 md:py-24">
+	<div class="container-x">
+		<div class="flex flex-wrap items-end justify-between gap-6">
+			<div>
+				<p class="eyebrow">01 — Selected work</p>
+				<h2 class="section-title">Things I've shipped</h2>
+			</div>
+			<p class="text-muted max-w-xs text-sm leading-relaxed">
+				Three case studies from the last four years. Most of the code lives behind company walls —
+				the architecture is the part I can show.
+			</p>
+		</div>
+
+		<div class="mt-12 space-y-5">
+			{#each projects as project, i (project.index)}
+				<article class="project-card" class:flip={i % 2 === 1} use:inview use:tilt data-reveal>
+					<div class="project-art">
+						<ProjectArt variant={project.art} />
+					</div>
+
+					<div class="flex flex-col justify-center p-6 md:p-9">
+						<div
+							class="text-muted flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-[0.6875rem]"
+						>
+							<span>{project.index}</span>
+							<span class="bg-line h-px w-6"></span>
+							<span>{project.org}</span>
+							<span class="opacity-40">/</span>
+							<span>{project.period}</span>
+						</div>
+
+						<h3 class="mt-4 text-2xl font-[550] tracking-[-0.02em] md:text-3xl">
+							<a class="card-link" href={`/work/${project.slug}`}>{project.title}</a>
+						</h3>
+
+						<p class="text-muted mt-3 max-w-xl text-sm leading-relaxed md:text-base">
+							{project.summary}
+						</p>
+
+						<ul class="mt-5 space-y-2">
+							{#each project.points as point}
+								<li class="flex gap-3 text-sm leading-relaxed">
+									<span class="bg-accent mt-2 h-1 w-1 shrink-0 rounded-full"></span>
+									<span>{point}</span>
+								</li>
+							{/each}
+						</ul>
+
+						<div class="mt-6 flex flex-wrap gap-2">
+							{#each project.stack as tech}
+								<span class="chip">{tech}</span>
+							{/each}
+						</div>
+
+						<span class="card-cta">
+							Read case study
+							<Arrow />
+						</span>
+					</div>
+				</article>
+			{/each}
+		</div>
+
+		<div class="mt-8 flex flex-wrap items-center justify-between gap-4">
+			<a href="/work" class="link-arrow">
+				All case studies
+				<Arrow />
+			</a>
+			<a
+				href="https://github.com/fahadkhan174"
+				target="_blank"
+				rel="me noopener noreferrer"
+				class="link-arrow"
+			>
+				More on GitHub
+				<Arrow />
+			</a>
+		</div>
+	</div>
+</section>
+
+<!-- Toolkit -->
+<section id="toolkit" class="border-line border-t py-16 md:py-24">
+	<div class="container-x grid gap-12 lg:grid-cols-[0.4fr_0.6fr]">
+		<div>
+			<p class="eyebrow">02 — Toolkit</p>
+			<h2 class="section-title">The stack I reach for.</h2>
+			<p class="text-muted mt-5 max-w-sm text-sm leading-relaxed">
+				Java and Spring Boot for the services, React or SvelteKit for the interface, and whichever
+				managed database fits the shape of the data.
+			</p>
+		</div>
+
+		<div class="grid gap-x-8 gap-y-8 sm:grid-cols-2">
+			{#each skillGroups as group (group.title)}
+				<div class="border-line border-t pt-4" use:inview data-reveal>
+					<h3 class="text-muted font-mono text-[0.6875rem] tracking-[0.16em] uppercase">
+						{group.title}
+					</h3>
+					<ul class="mt-3 flex flex-wrap gap-2">
+						{#each group.items as item}
+							<li class="chip">{item}</li>
+						{/each}
+					</ul>
+				</div>
+			{/each}
+		</div>
+	</div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="border-line border-t py-16 md:py-24">
+	<div class="container-x">
+		<div class="flex flex-wrap items-end justify-between gap-6">
+			<div>
+				<p class="eyebrow">03 — Experience</p>
+				<h2 class="section-title">A decade of shipping</h2>
+			</div>
+			<p class="text-muted max-w-xs text-sm leading-relaxed">
+				The short version: enterprise systems, modernisation work, and interfaces built to be used.
+			</p>
+		</div>
+
+		<ol class="timeline mt-12">
+			{#each experience as job, i (job.company + (job.client ?? '') + job.period)}
+				<li class="timeline-item" class:current={job.current} use:inview data-reveal>
+					<span class="timeline-dot" aria-hidden="true"></span>
+
+					<div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+						<h3 class="text-lg font-[550] tracking-[-0.01em] md:text-xl">
+							{job.company}{#if job.client}<span class="text-muted">{` — ${job.client}`}</span>{/if}
+						</h3>
+						<span class="text-muted font-mono text-[0.6875rem] tracking-wide">{job.period}</span>
+					</div>
+
+					<p class="text-muted mt-2 max-w-2xl text-sm leading-relaxed">{job.summary}</p>
+
+					<ul class="mt-3 space-y-1.5">
+						{#each job.points as point}
+							<li class="flex gap-2.5 text-sm leading-relaxed">
+								<span class="bg-line mt-2 h-1 w-1 shrink-0 rounded-full"></span>
+								<span>{point}</span>
+							</li>
+						{/each}
+					</ul>
+
+					<div class="mt-4 flex flex-wrap gap-2">
+						{#each job.stack as tech}
+							<span class="chip">{tech}</span>
+						{/each}
+					</div>
+				</li>
+			{/each}
+		</ol>
+	</div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="border-line border-t py-16 md:py-24">
+	<div class="container-x">
+		<p class="eyebrow">04 — Contact</p>
+
+		<h2 class="mt-4 text-[clamp(2.6rem,7vw,5rem)] leading-[0.95] font-[560] tracking-[-0.045em]">
+			Let's build <br />something good.
+		</h2>
+
+		<div class="mt-10 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+			<a href="mailto:{profile.email}" class="cta-email">
+				{profile.email}
+				<Arrow />
+			</a>
+			<p class="text-muted max-w-xs text-sm leading-relaxed">
+				Currently at IBM. Email is the fastest way to reach me.
+			</p>
+		</div>
+
+		<div class="border-line mt-16 grid gap-8 border-t pt-8 sm:grid-cols-3">
+			{#each socials as social (social.label)}
+				<a
+					href={social.href}
+					target="_blank"
+					rel="me noopener noreferrer"
+					class="social-link group"
+				>
+					<span class="text-muted font-mono text-[0.625rem] tracking-[0.16em] uppercase">
+						{social.label}
+					</span>
+					<span class="mt-1 flex items-center gap-2 text-sm">
+						{social.handle}
+						<Arrow class="social-arrow" />
+					</span>
+				</a>
+			{/each}
+		</div>
+	</div>
+</section>

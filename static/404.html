@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" class="dark">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#0a0a0b" />
+		<meta name="robots" content="noindex" />
+		<meta
+			name="description"
+			content="That page does not exist. Head back to the work, the toolkit or the contact details on Fahad Khan's portfolio."
+		/>
+		<link rel="icon" href="/favicon.png" />
+		<title>Page not found — Fahad Khan</title>
+		<script>
+			// Match the saved theme before first paint, same as the app shell.
+			(function () {
+				try {
+					if (localStorage.getItem('theme') === 'light') {
+						document.documentElement.classList.remove('dark');
+						var meta = document.querySelector('meta[name="theme-color"]');
+						if (meta) meta.setAttribute('content', '#f4f2ed');
+					}
+				} catch (e) {
+					/* storage blocked — keep the dark default */
+				}
+			})();
+		</script>
+		<style>
+			:root {
+				color-scheme: dark;
+				--canvas: #0a0a0b;
+				--surface: #131316;
+				--ink: #f2f2ef;
+				--muted: #9b9ba3;
+				--line: rgba(255, 255, 255, 0.12);
+				--accent: #c9f24d;
+				--accent-ink: #0a0a0b;
+			}
+
+			html:not(.dark) {
+				color-scheme: light;
+				--canvas: #f4f2ed;
+				--surface: #fffefb;
+				--ink: #0d0d0f;
+				--muted: #5f5f66;
+				--line: rgba(13, 13, 15, 0.14);
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			html,
+			body {
+				height: 100%;
+			}
+
+			body {
+				margin: 0;
+				background-color: var(--canvas);
+				color: var(--ink);
+				font-family:
+					Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+				-webkit-font-smoothing: antialiased;
+				display: grid;
+				place-items: center;
+				padding: 1.5rem;
+				background-image:
+					linear-gradient(var(--line) 1px, transparent 1px),
+					linear-gradient(90deg, var(--line) 1px, transparent 1px);
+				background-size: 72px 72px;
+				background-position: center;
+			}
+
+			.card {
+				width: min(38rem, 100%);
+				border: 1px solid var(--line);
+				border-radius: 1.5rem;
+				background-color: var(--surface);
+				padding: clamp(1.75rem, 5vw, 3rem);
+				box-shadow: 0 40px 120px -60px rgba(201, 242, 77, 0.35);
+			}
+
+			.brand {
+				display: inline-grid;
+				place-items: center;
+				width: 2rem;
+				height: 2rem;
+				border-radius: 0.55rem;
+				background-color: var(--accent);
+				color: var(--accent-ink);
+				font-size: 0.72rem;
+				font-weight: 700;
+				letter-spacing: -0.02em;
+			}
+
+			.eyebrow {
+				margin: 2rem 0 0;
+				font-family: ui-monospace, 'SFMono-Regular', Consolas, monospace;
+				font-size: 0.6875rem;
+				letter-spacing: 0.18em;
+				text-transform: uppercase;
+				color: var(--muted);
+			}
+
+			h1 {
+				margin: 0.75rem 0 0;
+				font-size: clamp(2.25rem, 7vw, 3.5rem);
+				line-height: 0.98;
+				letter-spacing: -0.045em;
+				font-weight: 600;
+			}
+
+			p.copy {
+				margin: 1.25rem 0 0;
+				font-size: 0.95rem;
+				line-height: 1.65;
+				color: var(--muted);
+			}
+
+			.actions {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.75rem;
+				margin-top: 2rem;
+			}
+
+			.btn {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.5rem;
+				border-radius: 9999px;
+				padding: 0.8rem 1.3rem;
+				font-size: 0.9rem;
+				font-weight: 600;
+				text-decoration: none;
+				transition:
+					transform 0.2s ease,
+					border-color 0.2s ease;
+			}
+
+			.btn:hover {
+				transform: translateY(-2px);
+			}
+
+			.btn-primary {
+				background-color: var(--accent);
+				color: var(--accent-ink);
+			}
+
+			.btn-ghost {
+				border: 1px solid var(--line);
+				color: var(--ink);
+			}
+
+			.btn-ghost:hover {
+				border-color: var(--ink);
+			}
+
+			a:focus-visible {
+				outline: 2px solid var(--accent);
+				outline-offset: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<main class="card">
+			<span class="brand" aria-hidden="true">FK</span>
+			<p class="eyebrow">404 — Not found</p>
+			<h1>This page isn't here.</h1>
+			<p class="copy">
+				The page you were looking for has moved or never existed. The work and contact details are
+				still one click away.
+			</p>
+			<div class="actions">
+				<a class="btn btn-primary" href="/">Back home &nearr;</a>
+				<a class="btn btn-ghost" href="/#work">See the work</a>
+			</div>
+		</main>
+	</body>
+</html>

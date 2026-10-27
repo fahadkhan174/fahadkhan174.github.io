@@ -10,7 +10,7 @@ export function load() {
 			description:
 				'Case studies on enterprise platform modernisation, shared Kafka and REST libraries, and documentation delivery pipelines.',
 			image: '/og.png',
-			imageAlt: 'Selected case studies by Fahad Khan',
+			imageAlt: 'Selected case studies by Fahad',
 			type: 'website',
 			schema: workSchema()
 		}

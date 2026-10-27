@@ -1,13 +1,13 @@
 export const site = {
-	name: 'Fahad Khan',
+	name: 'Mohd Fahad',
 	url: 'https://fahadkhan174.github.io',
-	title: 'Fahad Khan — Full Stack Engineer',
+	title: 'Mohd Fahad — Full Stack Engineer',
 	description:
 		'Full Stack Engineer at IBM building user-centric products with Java, Spring Boot, React and SvelteKit.'
 };
 
 export const profile = {
-	name: 'Fahad Khan',
+	name: 'Mohd Fahad',
 	role: 'Full Stack Engineer',
 	company: 'IBM',
 	statement:

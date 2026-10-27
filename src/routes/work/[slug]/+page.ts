@@ -17,10 +17,10 @@ export function load({ params }) {
 		project,
 		next: getNextProject(params.slug),
 		seo: {
-			title: `${project.title} — ${project.org} | Fahad Khan`,
+			title: `${project.title} — ${project.org} | Mohd Fahad`,
 			description: project.seoDescription,
 			image: project.ogImage,
-			imageAlt: `${project.title} — a case study by Fahad Khan`,
+			imageAlt: `${project.title} — a case study by Mohd Fahad`,
 			type: 'article',
 			schema: caseStudySchema(project)
 		}

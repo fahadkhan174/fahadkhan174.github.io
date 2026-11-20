@@ -94,6 +94,8 @@
 					<ul class="ml-4 list-disc">
 						<li>IDEA, Eclipse</li>
 						<li>SQL Dev., VS Code</li>
+						<li>IBM BOB</li>
+						<li>Claude Code</li>
 					</ul>
 				</div>
 			</div>

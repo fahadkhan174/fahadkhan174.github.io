@@ -89,7 +89,7 @@
 				</div>
 			</div>
 			<div class="bg-divBg min-w-2/5 flex-auto rounded-xl p-4 text-white md:min-w-1/4">
-				<div class="font-jetbrains mb-4 text-xl">Tools</div>
+				<div class="font-jetbrains mb-4 text-xl">Tools & Agents</div>
 				<div>
 					<ul class="ml-4 list-disc">
 						<li>IDEA, Eclipse</li>
